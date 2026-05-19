@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TechSpace | Home </title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100 bg-dark text-light">
+    
+   <header>
+        <!-- Fixed top navigation bar with Bootstrap border classes instead of inline CSS -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top py-3 shadow border-bottom border-2 border-danger">
+            <div class="container-fluid px-4">
+                
+                <!-- BRAND LOGO ZONE -->
+                <a class="navbar-brand fw-bold text-white d-flex align-items-center" href="./index.html">
+                    <img src="https://api.iconify.design/lucide:cpu.svg?color=%23ffffff" alt="TechSpace Logo" height="30" class="me-2 d-inline-block align-top">
+                    TechSpace
+                </a>
+
+                <!-- NAV LINKS -->
+                <ul class="navbar-nav nav-pills ms-auto">
+                    <li class="nav-item px-1">
+                        <!-- Pure Bootstrap dark red: Uses danger color with 75% opacity to deepen the crimson tone -->
+                        <a class="nav-link text-white bg-danger bg-opacity-75 active shadow-sm" href="./index.html"> Home </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link text-white" href="./products.html"> Products </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link text-white" href="./about.html"> About </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a class="nav-link text-white" href="./contact.html"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN HERO SECTION: Swapped hardcoded background color for a dark danger container layout -->
+    <main class="container-fluid text-center pt-5 mt-5 shadow bg-danger bg-opacity-25 border-bottom border-danger">
+        <div class="py-5">
+            <h1 class="display-4 fw-bold text-white"> Welcome to TechSpace! </h1>
+            <p class="lead text-white-50"> Your one-stop shop for all things tech! </p>
+            <a href="./products.html" class="btn btn-outline-light btn-lg mt-3 shadow-sm px-4"> Explore Our Products </a>
+        </div>
+    </main>
+
+    <!-- CAROUSEL WRAPPER -->
+    <div id="techspaceCarousel" class="carousel slide container my-5 shadow rounded overflow-hidden p-0" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#techspaceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#techspaceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#techspaceCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <!-- Slide Content -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&h=400" class="d-block w-100" alt="Tech Image 1">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                    <h5> Cutting-Edge Gadgets </h5>
+                    <p> Discover the latest in tech innovation! </p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&h=400" class="d-block w-100" alt="Tech Image 2">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                    <h5> Smart Home Solutions </h5>
+                    <p> Make your home smarter with our range of products! </p>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&h=400" class="d-block w-100" alt="Tech Image 3">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                    <h5> Tech Accessories </h5>
+                    <p> Find the perfect accessories for your devices! </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#techspaceCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#techspaceCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light text-center py-4 border-top border-secondary mt-auto">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 TechSpace. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
